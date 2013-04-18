@@ -8,7 +8,6 @@ remoteStorage.defineModule('sockethub', function(privateClient, publicClient) {
       },
 
       getConfig: function(platform, type) {
-        console.log(' [RS] getConfig('+platform+', '+type+')');
         return privateClient.getObject(type+'/'+platform);
       },
 
